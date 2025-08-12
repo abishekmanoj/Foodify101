@@ -13,6 +13,7 @@ This project explores the application of transfer learning and layer-wise fine-t
 - Modular code for training, evaluation, and visualization
 - Progressive fine-tuning: fc only (Phase 1) → layer4 + fc (Phase 2) → layer3 + layer4 + fc (Phase 3)
 - Layer-specific learning rates using AdamW (in Phase 3)
+- Visualized training metrics using loss and accuracy curves for each training phase
 - Achieved over 81% test accuracy
 
 ## Project Structure
@@ -53,6 +54,8 @@ Foodify101/
 - Scheduler: StepLR (gamma=0.5 every 5 epochs)
 - Epochs: 20
 - Final test accuracy: 81.7%
+
+- Each phase is accompanied by loss and accuracy curves (see `experiments.md`)
 
 ## Installation
 
